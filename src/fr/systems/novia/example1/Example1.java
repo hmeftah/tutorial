@@ -4,6 +4,8 @@ package fr.systems.novia.example1;
  * Created by formation2 on 22/05/15.
  */
 
+import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.util.*;
 
 public class Example1 {
@@ -17,6 +19,9 @@ public class Example1 {
         s = PVALUE * r * r;
         p = 2 * PVALUE * r;
         System.out.printf("p = %5.2f, s = %.2f", p, s);
+
+
+
 
     }
 

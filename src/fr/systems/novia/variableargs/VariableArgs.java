@@ -18,7 +18,7 @@ public class VariableArgs {
         System.out.println("Max(20.5, 40.5, 50.5, 10.5, 30.5) = " + maximum);
 
         double [] x = {5, 10, 15, 30, 40};
-        maximum = findMax(x);
+        maximum = findMax1(x);
         System.out.println("Max in array x is " + maximum);
 
     }
@@ -32,4 +32,22 @@ public class VariableArgs {
                 largest = v;
         return largest;
     }
+
+    public static double findMax1(double[] values)
+    {
+        double largest = Double.MIN_VALUE;
+
+        for(double v : values)
+            if(v > largest)
+                largest = v;
+        return largest;
+    }
+
+
+
+
+
+
+
+
 }
